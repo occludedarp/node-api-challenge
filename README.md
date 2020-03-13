@@ -39,15 +39,20 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
+  Express routing allows us to split up group of request handlers so that we can map incoming requests based on the Url used and the request method. Express middleware provides methods that enable us to selectively choose where and when unique data curation or modification occurs in the sequence of the server code
 
 - [ ] Describe Middleware?
+  Express middleware provides access to parameters(req, res) and methods(next) so we can selectively choose where, when and how unique data curation, modification or validation occurs within a specific sequence of the server code.
 
 - [ ] Describe a Resource?
+  The data on the server that is accessed by clients.
 
 - [ ] What can the API return to help clients know if a request was successful?
+  a status code after the promise has resolved.
 
 - [ ] How can we partition our application into sub-applications?
-
+  by grouping request handlers into a separated file when implementing express router for a group of request handlers with identical endpoints.
+  
 ## Minimum Viable Product
 
 - [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
